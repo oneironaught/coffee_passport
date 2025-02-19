@@ -175,6 +175,7 @@
 				TargetAttributes = {
 					6972B5F92D5D8EF000F29A45 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1630;
 					};
 					6972B6092D5D8EF200F29A45 = {
 						CreatedOnToolsVersion = 16.2;
@@ -195,6 +196,9 @@
 			);
 			mainGroup = 6972B5F12D5D8EF000F29A45;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				694FA6EE2DA5A92C001FE623 /* XCLocalSwiftPackageReference "../../Downloads/CoffeePassportPackage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6972B5FB2D5D8EF000F29A45 /* Products */;
 			projectDirPath = "";
@@ -393,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coffee Passport/Preview Content\"";
@@ -411,6 +416,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "UTR.Coffee-Passport";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Coffee Passport/Coffee Passport-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -421,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coffee Passport/Preview Content\"";
@@ -439,6 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "UTR.Coffee-Passport";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Coffee Passport/Coffee Passport-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -552,6 +561,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		694FA6EE2DA5A92C001FE623 /* XCLocalSwiftPackageReference "../../Downloads/CoffeePassportPackage" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Downloads/CoffeePassportPackage;
+		};
+/* End XCLocalSwiftPackageReference section */
 	};
 	rootObject = 6972B5F22D5D8EF000F29A45 /* Project object */;
 }
