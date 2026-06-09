@@ -628,6 +628,195 @@ enum CoffeeExploreLibrary {
                     callout: "A tasting note can be simple: bright citrus, smooth cocoa, earthy spice, or sweet caramel."
                 )
             ]
-        )
-    ]
-}
+        ),
+                
+         CoffeeExploreTopic(
+                    id: "coffee-list-overview",
+                    title: "Coffee List Overview",
+                    subtitle: "Review the coffees in your passport with roast level, origin, body, acidity, processing, and pairings.",
+                    icon: "list.bullet.rectangle.fill",
+                    sections: [
+                        CoffeeExploreSection(
+                            heading: "Sunsera Blend",
+                            body: "Blonde Roast · Smooth and bright with notes of zesty citrus and toasted almond.",
+                            bullets: [
+                                "Origin: Brazil & Colombia",
+                                "Body: Medium-Light",
+                                "Acidity: Medium",
+                                "Processing: Washed + Sun-Dried",
+                                "Food Pairing: Blueberry Streusel Muffin, Chocolate Croissant, Toasted Almond Biscotti"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Veranda Blend",
+                            body: "Blonde Roast · Mellow and soft with notes of toasted malt and milk chocolate.",
+                            bullets: [
+                                "Origin: Latin America",
+                                "Body: Light",
+                                "Acidity: Medium",
+                                "Processing: Washed",
+                                "Food Pairing: Banana Nut Bread, Madeleines, Milk Chocolate"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Blonde Espresso Roast",
+                            body: "Blonde Roast · Smooth and subtly sweet with a balanced flavor profile.",
+                            bullets: [
+                                "Origin: Latin America & East Africa",
+                                "Body: Light",
+                                "Acidity: Medium",
+                                "Processing: Washed",
+                                "Food Pairing: Iced Lemon Loaf, Vanilla Scone, Cinnamon Coffee Cake"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Green Apron Blend",
+                            body: "Blonde Roast · Lively and refreshing with notes of honeybell orange and graham cracker.",
+                            bullets: [
+                                "Origin: Africa & Latin America",
+                                "Body: Medium",
+                                "Acidity: Medium",
+                                "Processing: Washed",
+                                "Food Pairing: Orange Slices, Graham Crackers, Iced Lemon Loaf"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Siren's Blend",
+                            body: "Medium Roast · Bright and lively with notes of juicy citrus and chocolate.",
+                            bullets: [
+                                "Origin: Latin America & Africa",
+                                "Body: Medium",
+                                "Acidity: Medium-High",
+                                "Processing: Washed",
+                                "Food Pairing: Iced Lemon Loaf, Candied Citrus, Milk Chocolate"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Iced Coffee Blend",
+                            body: "Medium Roast · Approachable and refreshing with notes of malted milk chocolate and brown sugar.",
+                            bullets: [
+                                "Origin: Latin America",
+                                "Body: Medium-Light",
+                                "Acidity: Medium",
+                                "Processing: Washed",
+                                "Food Pairing: Double Chocolate Brownie, Brown Sugar Oatmeal, Iced Lemon Loaf"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Cold Brew Blend",
+                            body: "Medium Roast · Smooth and rich with notes of cocoa and citrus.",
+                            bullets: [
+                                "Origin: Latin America & Africa",
+                                "Body: Full",
+                                "Acidity: Low",
+                                "Processing: Washed",
+                                "Food Pairing: Chocolate Croissant, Cinnamon Coffee Cake, Orange Slices"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Pike Place Roast",
+                            body: "Medium Roast · Smooth and balanced with subtle notes of cocoa and toasted nuts.",
+                            bullets: [
+                                "Origin: Latin America",
+                                "Body: Medium",
+                                "Acidity: Medium",
+                                "Processing: Washed",
+                                "Food Pairing: Chocolate Croissant, Cinnamon Coffee Cake, Peanut Butter"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Guatemala Antigua",
+                            body: "Medium Roast · Elegant and complex with notes of cocoa and soft spice.",
+                            bullets: [
+                                "Origin: Guatemala",
+                                "Body: Medium",
+                                "Acidity: High",
+                                "Processing: Washed",
+                                "Food Pairing: Chocolate Croissant, Apple Pastry, Caramel, Nuts"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Organic Yukon Blend",
+                            body: "Medium Roast · Big, bold, and balanced with hearty herbal notes and subtle acidity.",
+                            bullets: [
+                                "Origin: Latin America & Asia/Pacific",
+                                "Body: Full",
+                                "Acidity: Medium",
+                                "Processing: Washed + Semi-Washed",
+                                "Food Pairing: Classic Oatmeal, Cinnamon Coffee Cake, Morning Bun"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Sumatra",
+                            body: "Dark Roast · Earthy and herbal with rustic spice and a syrupy body.",
+                            bullets: [
+                                "Origin: Asia/Pacific",
+                                "Body: Full",
+                                "Acidity: Low",
+                                "Processing: Semi-Washed",
+                                "Food Pairing: Cheese Danish, Maple Bar, Oatmeal, Cinnamon"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Komodo Dragon",
+                            body: "Dark Roast · Bold and spicy with rich herbal and cedary notes.",
+                            bullets: [
+                                "Origin: Asia/Pacific",
+                                "Body: Full",
+                                "Acidity: Low",
+                                "Processing: Washed + Semi-Washed",
+                                "Food Pairing: Brie Cheese, Maple Bar, Buttery Pastries, Cinnamon"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Cafe Verona",
+                            body: "Dark Roast · Roasty and sweet with notes of dark cocoa and caramelized sugar.",
+                            bullets: [
+                                "Origin: Multi-region blend",
+                                "Body: Full",
+                                "Acidity: Low",
+                                "Processing: Washed + Semi-Washed",
+                                "Food Pairing: Chocolate Croissant, Chocolate Chip Cookie, Dark Chocolate"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Espresso Roast",
+                            body: "Dark Roast · Rich and caramelly with notes of molasses and caramelized sugar.",
+                            bullets: [
+                                "Origin: Multi-region blend",
+                                "Body: Full",
+                                "Acidity: Medium",
+                                "Processing: Washed",
+                                "Food Pairing: Double Chocolate Brownie, Chocolate Caramels, Caramel Desserts"
+                            ]
+                        ),
+
+                        CoffeeExploreSection(
+                            heading: "Italian Roast",
+                            body: "Dark Roast · Roasty and sweet with notes of dark cocoa and toasted marshmallow.",
+                            bullets: [
+                                "Origin: Multi-region blend",
+                                "Body: Medium",
+                                "Acidity: Low",
+                                "Processing: Washed",
+                                "Food Pairing: Chocolate, Caramelized Sugar, Spice Cake"
+                            ],
+                            callout: "This overview is a guest-friendly reference. Signed-in users can open the main Coffee List to check in coffees, favorite them, and save tasting progress."
+                        )
+                    ]
+                )
+            ]
+        }

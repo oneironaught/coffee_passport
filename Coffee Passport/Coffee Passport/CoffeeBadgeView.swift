@@ -15,7 +15,9 @@ struct CoffeeBadgeView: View {
         var earned: [Badge] = []
         if count >= 5 { earned.append(Badge(name: "Coffee Explorer", icon: "globe.americas.fill")) }
         if count >= 10 { earned.append(Badge(name: "Caffeine Connoisseur", icon: "bolt.fill")) }
-        if count >= 15 { earned.append(Badge(name: "Master Taster", icon: "brain.head.profile")) }
+        if count >= 15 { earned.append(Badge(name: "Expert Taster", icon: "brain.head.profile")) }
+        if count >= 20 { earned.append(Badge(name: "Master Taster", icon: "brain.head.profile")) }
+        if count >= 15 { earned.append(Badge(name: "Coffee Master", icon: "brain.head.profile")) }
         return earned
     }
 

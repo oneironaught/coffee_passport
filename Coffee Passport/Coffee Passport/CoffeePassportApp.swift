@@ -4,12 +4,24 @@ import GoogleSignIn
 
 @main
 struct CoffeePassportApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
-    @StateObject private var viewModel = CoffeeViewModel()
-    @StateObject private var authManager = AuthManager.shared
+    @StateObject private var viewModel: CoffeeViewModel
+    @StateObject private var authManager: AuthManager
 
     init() {
+        FirebaseApp.configure()
+
+        if let clientID = FirebaseApp.app()?.options.clientID {
+            GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: clientID)
+            print("Google Sign-In configured successfully.")
+        } else {
+            print("Missing Firebase client ID. Check GoogleService-Info.plist target membership.")
+        }
+
+        _viewModel = StateObject(wrappedValue: CoffeeViewModel())
+        _authManager = StateObject(wrappedValue: AuthManager.shared)
+
+        AuthManager.shared.refreshCurrentUser()
+
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(Color.starbucksGreen)
@@ -31,23 +43,5 @@ struct CoffeePassportApp: App {
                     }
             }
         }
-    }
-}
-
-class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
-    ) -> Bool {
-        FirebaseApp.configure()
-
-        if let clientID = FirebaseApp.app()?.options.clientID {
-            GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: clientID)
-            print("Google Sign-In configured successfully.")
-        } else {
-            print("Missing Firebase client ID. Check GoogleService-Info.plist.")
-        }
-
-        return true
     }
 }

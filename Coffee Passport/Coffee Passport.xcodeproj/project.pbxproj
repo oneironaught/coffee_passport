@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		69030D8F2DB170D700889129 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 69030D8E2DB170D700889129 /* FirebaseAnalytics */; };
+		69030D912DB170D700889129 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 69030D902DB170D700889129 /* FirebaseAuth */; };
+		69030D932DB170D700889129 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 69030D922DB170D700889129 /* FirebaseCore */; };
+		69030D992DB1754400889129 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 69030D982DB1754400889129 /* GoogleSignIn */; };
+		69030D9B2DB1754400889129 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 69030D9A2DB1754400889129 /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6972B60B2D5D8EF200F29A45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +37,22 @@
 		6972B6142D5D8EF200F29A45 /* Coffee PassportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee PassportUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6928D7702DB2B8B10033A14F /* Exceptions for "Coffee Passport" folder in "Coffee Passport" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6972B5F92D5D8EF000F29A45 /* Coffee Passport */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6972B5FC2D5D8EF000F29A45 /* Coffee Passport */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6928D7702DB2B8B10033A14F /* Exceptions for "Coffee Passport" folder in "Coffee Passport" target */,
+			);
 			path = "Coffee Passport";
 			sourceTree = "<group>";
 		};
@@ -52,6 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69030D9B2DB1754400889129 /* GoogleSignInSwift in Frameworks */,
+				69030D8F2DB170D700889129 /* FirebaseAnalytics in Frameworks */,
+				69030D992DB1754400889129 /* GoogleSignIn in Frameworks */,
+				69030D932DB170D700889129 /* FirebaseCore in Frameworks */,
+				69030D912DB170D700889129 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +138,11 @@
 			);
 			name = "Coffee Passport";
 			packageProductDependencies = (
+				69030D8E2DB170D700889129 /* FirebaseAnalytics */,
+				69030D902DB170D700889129 /* FirebaseAuth */,
+				69030D922DB170D700889129 /* FirebaseCore */,
+				69030D982DB1754400889129 /* GoogleSignIn */,
+				69030D9A2DB1754400889129 /* GoogleSignInSwift */,
 			);
 			productName = "Coffee Passport";
 			productReference = 6972B5FA2D5D8EF000F29A45 /* Coffee Passport.app */;
@@ -171,7 +202,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					6972B5F92D5D8EF000F29A45 = {
 						CreatedOnToolsVersion = 16.2;
@@ -197,7 +228,8 @@
 			mainGroup = 6972B5F12D5D8EF000F29A45;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				694FA6EE2DA5A92C001FE623 /* XCLocalSwiftPackageReference "../../Downloads/CoffeePassportPackage" */,
+				69030D8D2DB170D700889129 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				69030D972DB1754400889129 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6972B5FB2D5D8EF000F29A45 /* Products */;
@@ -331,6 +363,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -387,6 +420,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -403,11 +437,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Coffee Passport/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coffee-Passport-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,11 +471,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Coffee Passport/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coffee-Passport-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,12 +602,52 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		694FA6EE2DA5A92C001FE623 /* XCLocalSwiftPackageReference "../../Downloads/CoffeePassportPackage" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../Downloads/CoffeePassportPackage;
+/* Begin XCRemoteSwiftPackageReference section */
+		69030D8D2DB170D700889129 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+		69030D972DB1754400889129 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69030D8E2DB170D700889129 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69030D8D2DB170D700889129 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		69030D902DB170D700889129 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69030D8D2DB170D700889129 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		69030D922DB170D700889129 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69030D8D2DB170D700889129 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		69030D982DB1754400889129 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69030D972DB1754400889129 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		69030D9A2DB1754400889129 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69030D972DB1754400889129 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6972B5F22D5D8EF000F29A45 /* Project object */;
 }
